@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*images all*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*images ending all*/
+
+/*slider/arrow/hompage*/
+.images {
+  width: 250px;
+  height: 200px;
+}
+.slider-arrow {
+  display: block;
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  transition: opacity 100ms;
+  opacity: 0.8;
+  padding: 5px 2px;
+  justify-content: center;
+}
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.531);
+}
+#arrow-prev {
+  left: 0;
+}
+#arrow-next {
+  right: 0;
+}
+/*slider ending/
+
+/*my form*/
+#textera {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+.myinput {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #004aad;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+#contactForm {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.submit {
+  width: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 20px;
+  background: #205caa;
+}
+.submitting:hover {
+  color: white;
+  background: #004aad;
+}
+/*my form*/
+.contactmain {
+  display: flex;
+  flex-direction: row;
+}
+.sideContainerContact {
+  margin-left: auto;
+  padding: 20px;
+}
+.loremblog {
+  font-size: 12px;
+  padding: 10px;
+}
+.dates {
+  background: white;
+  position: absolute;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  top: 0;
+  border-radius: 10px 100px;
+}
+.read2 {
+  background: white;
+  position: absolute;
+  bottom: 0;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  right: 0;
+}
+.cateogory {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  padding: 10px;
+  background: #004badb8;
+}
+.allblogs,
+.Development,
+.awakening,
+.spiritual {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 4px 100px;
+  cursor: pointer;
+}
+.allblogs:hover,
+.Development:hover,
+.awakening:hover,
+.spiritual:hover {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+.qotess {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.031);
+  padding: 5px;
+  font-size: 20px;
+}
+.breaddcrumb {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.sideContainerContact{
+  text-align: center;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

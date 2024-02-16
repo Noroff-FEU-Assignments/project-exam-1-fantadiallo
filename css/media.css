@@ -1,0 +1,39 @@
+
+
+/*navigation ending*/
+/*slider starter/hompage*/
+@media screen and (max-width: 600px) {
+  .slider {
+    max-width: 450px;
+  }
+  .post-card {
+    max-width: 150px;
+    gap: 2px;
+  }
+
+  .lates-post {
+    max-width: 300px;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .images {
+    width: 150px;
+    height: 125px;
+  }
+  .hompagetext {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .insidetexthome {
+    display: none;
+  }
+}
+
+.latespostContainer {
+  background: #0a1d37;
+}
+
+/*sliderending*/

@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+h2 {
+  font-size: 40px;
+}
+a {
+  color: white;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: #0a1d37;
+  width: 100%;
+}
+
+/*carsoule slider*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+.lates-post {
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.129);
+}
+.slider {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  overflow-x: scroll;
+  padding: 1px;
+  max-width: 910px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.post-card {
+  text-align: center;
+  padding: 4px;
+  max-width: 300px;
+  flex: 1 0 100%;
+  margin: auto;
+}
+.images {
+  width: 250px;
+  height: 200px;
+}
+.slider-arrow {
+  display: block;
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  transition: opacity 100ms;
+  opacity: 0.8;
+  padding: 5px 2px;
+  justify-content: center;
+}
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.531);
+}
+#arrow-prev {
+  left: 0;
+}
+#arrow-next {
+  right: 0;
+}
+
+/*slider ending*/
+@media screen and (max-width: 600px) {
+  .slider {
+    max-width: 450px;
+  }
+  .post-card {
+    max-width: 150px;
+    gap: 2px;
+  }
+
+  .lates-post {
+    max-width: 200px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .images {
+    width: 150px;
+    height: 125px;
+  }
+}
+
+.blogsContainer {
+  padding: 10px;
+
+  margin: auto;
+  background-blend-mode: multiply;
+
+  background-image: url("images/self-potrayal-8133297_640.jpg");
+  background-position: center;
+  font-weight: bolder;
+  height: 20vh;
+}
+
+.AboutContainer {
+  padding: 20px;
+
+  text-align: left;
+  background-blend-mode: multiply;
+  background-image: url("images/Starting your spiritual journey (3).jpg");
+  background-position: center;
+  font-weight: bolder;
+  font-size: 30px;
+
+  height: 50vh;
+  font-size: 16px;
+}
+
+.hompagemain {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-blend-mode: multiply;
+  background-image: url("images/african-7727215_640.jpg");
+  background-position: center;
+  font-weight: bolder;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.474);
+  height: 60vh;
+  font-size: 16px;
+}
+
+.insidetexthome {
+  text-align: center;
+  background: #eff6ffc0;
+  max-width: 600px;
+  top: 70px;
+  left: 50%;
+  padding: 20px;
+  color: black;
+  position: absolute;
+}
+.insidetexthome p {
+  color: #0a1d37;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.hompagetext h1 {
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  background: #0a1d375d;
+  max-width: 300px;
+  padding: 10px;
+  align-items: center;
+  color: white;
+}
+.qoti p {
+  background: #0a1d375d;
+  max-width: 300px;
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(116, 242, 116);
+}
+
+
+
+/*navigation*/
+.navigationbar {
+  padding: 20px;
+  min-height: 60px;
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 24px;
+  transition: transform 0.25s ease-out;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.logo {
+  color: #023c56;
+  background: white;
+  padding: 15px;
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: 26px;
+  text-align: center;
+  border-radius: 5px 100px;
+}
+
+.nav-links:hover {
+  transition: 0.7s ease;
+  color: #007bb4;
+  text-decoration: underline white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+.hamburger {
+  float: right;
+}
+.navlinks:hover,
+.navlinks2:hover {
+  text-decoration: underline;
+}
+/*animation navigation and hompage*/
+.navigation-links {
+  display: flex;
+  position: relative;
+}
+
+.navigation-links::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navigation-links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translate(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translate(8px) rotate(45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background: #0a1d37;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}

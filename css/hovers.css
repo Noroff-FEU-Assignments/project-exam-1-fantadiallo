@@ -1,0 +1,11 @@
+a:hover {
+  color: rgb(9, 101, 140);
+}
+
+
+
+.slider-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+/*animation navigation and hompage ending*/

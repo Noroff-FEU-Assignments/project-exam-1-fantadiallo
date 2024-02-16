@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="blogs.css">
+</head>
+<body>
+  <header>
+     
+    <nav class="navigationbar">
+      <label class="logo">Freeminds <i class="fas fas fab fa-earlybirds"></i></label>
+      <div class="nav-menu">
+        <div class="nav-item"><a href="index.html" class="nav-links">HOME</a></div>
+        <div class="nav-item"><a href="blogs.html"class="nav-links">BLOGS</a></div>
+        <div class="nav-item"><a href="about.html"class="nav-links">ABOUT</a></div>
+        <div class="nav-item"><a href="contact.html"class="nav-links">CONTACT</a></div>
+      </div>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+   
+      </nav>
+    
+  </header>
+      <main>
+        <h1>Blogs</h1>
+        <div class="blogsContainer"></div>
+        <div class="qotess">
+          <div class="qotee">Dive inn and explore your spiritual path <label class="logo2">Freeminds <i class="fas fas fab fa-earlybirds"></i></label>
+          </div>
+          <div class="socials">
+           <a href="#"> <i style="color: rgb(64, 154, 183);" class= "fas fas fab fa-facebook"></i></a>
+           <a href="#"> <i style="color: aqua;" class="fas fas fab fab fa-twitter"></i></a>
+           <a style="color: purple;" href="#"> <i class="fas fas fab fab fa-instagram"></i></a>
+          
+          </div>
+        </div>
+        <div class="mainblogsuner">
+        <div class="breaddcrumb">
+          <a href="index.html">>Back to hompage</a>
+        
+        </div>
+        <div class="cateogory">
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="awakening">awakening</option>
+            <option value="development">development</option>
+            <option value="spiritual">spiritual</option>
+           
+          </select>
+         
+        </div>
+       
+        
+        
+  
+        <div class="blogs"></div>
+        <div class="loading-box" style="display: none;"><div class="loader"></div></div>
+        <div id="load-more-btn">Load More</div>
+        <div class="top" id="backtop"><i class="fas fas fas fa-arrow-up"></i></div>
+         
+      </div>
+      </main>
+      <footer>
+        <div class="footerlinks">
+          <a href="index.html">*HOME</a>
+          <a href="about.html">*About</a>
+          <a href="blogs.html">*blogs</a>
+          <a href="contact.html">*Contact</a>
+        </div>
+      </footer>
+    
+</body>
+<script src="js/ui/loading.js"></script>
+<script src="js/pages/blogPage.js"></script>
+<script src="js/ui/toggieMobileNav.js"></script>
+</html>

@@ -2,7 +2,7 @@ const detailContainer = document.querySelector(".blog-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "http://freemind1.com/wp-json/wp/v2/products/" + id + "?acf_format=standard";
+const url = `https://freemind1.com/wp-json/wp/v2/posts/${id}`;
 
 async function Getblogs() {
   try {
@@ -17,25 +17,22 @@ async function Getblogs() {
     createHTML(details);
   } catch (error) {
     console.error('An error occurred:', error);
-   
     detailContainer.innerHTML = `<p>Error: ${error.message}</p>`;
   }
 }
-Getblogs()
-
+Getblogs();
 
 function createHTML(details) {
   detailContainer.innerHTML = `
     <div class="detailContainermain">
-      <img src="${details.acf.image}" alt="image" class="bildedetail" id="myBtn">
+      <img src="${details.image}" alt="image" class="bildedetail" id="myBtn">
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <img src="${details.acf.image}" alt="image">
-        </div>
+       </div>
       </div>
       <h1>${details.title.rendered}</h1>
-      <p class="summary">${details.acf.summary}</p>
+      <p class="summary">${details.summary}</p>
     </div>
   `;
 

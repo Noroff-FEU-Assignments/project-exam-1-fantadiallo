@@ -1,4 +1,4 @@
-const url = "http://freemind1.com/wp-json/wp/v2/products?acf_format=standard";
+const url = "http://freemind1.com/wp-json/wp/v2/posts";
 const sliderContainer = document.querySelector(".slider");
 const loader = document.querySelector(".loading-box");
 
@@ -17,7 +17,7 @@ async function makeApiCall() {
         <a href="blogsdetails.html?id=${post.id}" class="post-card" id="post-card">
           <div class="slider-card">
             <h2 class="title-hompage">${post.title.rendered}</h2>
-            <img src="${post.acf.image}" class="images" alt="image"/>
+            <img src="${post.image}" class="images" alt="image"/>
           </div>
         </a>`;
     });

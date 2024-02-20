@@ -1,4 +1,4 @@
-const url = "http://freeminds.local/wp-json/wp/v2/products?acf_format=standard";
+const url = "http://freemind1.com/wp-json/wp/v2/products?acf_format=standard";
 const blogContainer = document.querySelector(".blogs");
 const loadMoreBtn = document.getElementById("load-more-btn");
 const loader = document.querySelector(".loading-box");
@@ -22,13 +22,14 @@ async function GetBlogs() {
     blogs.forEach(function (blog) {
       blogContainer.innerHTML += `
         <a href="blogsdetails.html?id=${blog.id}" class="blogs-card">
-          <div class="blogcard-imgcontainer">
-            <img src="${blog.acf.image}" class="imagesallblogs" alt="image" />
+         
+        <h2 class="tit2">${blog.title.rendered}</h2>
+        <div class="blogcard-imgcontainer">
+            <img src="${blog.acf.image}" class="imagesallblogs" alt="image"/>
             <div>
               <p class="dates" id="date">${blog.date_gmt}</p>
             </div>
           </div>
-          <h1 class="tit2">${blog.title.rendered}</h1>
           <div class="loremblog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi provident veniam, explicabo harum labore corporis minima quibusdam, perspiciatis cumque aspernatur, maxime ex similique iure veritatis. Voluptas possimus temporibus vitae quisquam!
          
           </div>

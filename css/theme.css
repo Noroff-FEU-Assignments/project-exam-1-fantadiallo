@@ -1,4 +1,8 @@
 /* Colours, fonts, soft touches */
+
+.allpostlink a{
+  color: green;
+}
 p,
 a {
   color: white;

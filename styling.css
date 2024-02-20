@@ -1,108 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-h2 {
-  font-size: 40px;
-}
-a {
-  color: white;
-}
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-header {
-  background: #0a1d37;
-  width: 100%;
-}
 
-/*carsoule slider*/
-img {
-  max-width: 100%;
-  height: auto;
-}
-.lates-post {
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.129);
-}
-.slider {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  overflow-x: scroll;
-  padding: 1px;
-  max-width: 910px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
 
-.post-card {
-  text-align: center;
-  padding: 4px;
-  max-width: 300px;
-  flex: 1 0 100%;
-  margin: auto;
-}
-.images {
-  width: 250px;
-  height: 200px;
-}
-.slider-arrow {
-  display: block;
-  font-size: 20px;
-  background: transparent;
-  border: 0;
-  color: white;
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  margin: auto;
-  cursor: pointer;
-  transition: opacity 100ms;
-  opacity: 0.8;
-  padding: 5px 2px;
-  justify-content: center;
-}
-.slider-arrow:hover {
-  background: rgba(0, 0, 0, 0.531);
-}
-#arrow-prev {
-  left: 0;
-}
-#arrow-next {
-  right: 0;
-}
+
 
 /*slider ending*/
-@media screen and (max-width: 600px) {
-  .slider {
-    max-width: 450px;
-  }
-  .post-card {
-    max-width: 150px;
-    gap: 2px;
-  }
-
-  .lates-post {
-    max-width: 200px;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-  }
-  .images {
-    width: 150px;
-    height: 125px;
-  }
-}
 
 .blogsContainer {
   padding: 10px;
@@ -170,10 +70,10 @@ img {
   color: white;
 }
 .qoti p {
-  background: #0a1d375d;
+  
   max-width: 300px;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   color: rgb(116, 242, 116);
 }
 

@@ -2,22 +2,16 @@ const detailContainer = document.querySelector(".blog-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = `https://freemind1.com/wp-json/wp/v2/posts/${id}`;
+const url = "https://freemind1.com/wp-json/wp/v2/products/" + id + "?acf_format=standard";
 
 async function Getblogs() {
   try {
     const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error('Failed to fetch data');
-    }
     const details = await response.json();
-    if (!details) {
-      throw new Error('Failed to parse response data');
-    }
+    console.log(details);
     createHTML(details);
   } catch (error) {
-    console.error('An error occurred:', error);
-    detailContainer.innerHTML = `<p>Error: ${error.message}</p>`;
+    console.log(error);
   }
 }
 Getblogs();
@@ -25,14 +19,15 @@ Getblogs();
 function createHTML(details) {
   detailContainer.innerHTML = `
     <div class="detailContainermain">
-      <img src="${details.image}" alt="image" class="bildedetail" id="myBtn">
+      <img src="${details.acf.image}" alt="image" class="bildedetail" id="myBtn">
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-       </div>
+          <img src="${details.acf.image}" alt="image">
+        </div>
       </div>
       <h1>${details.title.rendered}</h1>
-      <p class="summary">${details.summary}</p>
+      <p class="summary">${details.acf.summary}</p>
     </div>
   `;
 

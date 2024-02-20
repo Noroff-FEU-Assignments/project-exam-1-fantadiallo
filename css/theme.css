@@ -1,14 +1,21 @@
 /* Colours, fonts, soft touches */
 
-.allpostlink a{
-  color: green;
+.allpostlink {
+  background: #0a1d37;
+  padding: 5px;
+}
+.allpostlink a {
+  font-size: 30px;
 }
 p,
 a {
   color: white;
   font-weight: bolder;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
+}
+.logo a {
+  color: #0a1d37;
 }
 .qotes {
   color: rgb(91, 164, 91);
@@ -24,9 +31,7 @@ a {
   justify-content: center;
   margin: auto;
   font-weight: bolder;
-  font-family: cursive;
   font-size: 26px;
-  text-align: center;
   max-width: 800px;
   display: flex;
   border-radius: 5px 150px 5px 100px;
@@ -35,7 +40,9 @@ a {
   color: #023c56;
   text-decoration-line: underline;
 }
-.myform,h1 {
+
+.myform,
+h1 {
   padding: 20px;
 }
 
@@ -49,19 +56,21 @@ h3,
   margin: auto;
   line-height: 30px;
 }
+.h2 {
+  font-size: 25px;
+}
 .Contacterlink,
-.blogsslink  {
+.blogsslink {
   background: whitesmoke;
   padding: 10px;
-text-align: center;
+  text-align: center;
   width: 200px;
   border: 2px solid #0a1d37;
   background-color: #023c56;
   border-radius: 4px;
-  
 }
 .Contacterlink:hover,
-.blogsslink:hover{
+.blogsslink:hover {
   background-color: #1f559f;
 }
 
@@ -133,7 +142,7 @@ img {
 /*header*/
 
 /*header ending*/
-.myform{
+.myform {
   width: 800px;
   font-size: 20px;
   background: #286fa92e;

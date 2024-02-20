@@ -1,7 +1,3 @@
-
-
-
-
 /*slider ending*/
 
 .blogsContainer {
@@ -70,14 +66,13 @@
   color: white;
 }
 .qoti p {
-  
+  background: #0a1d375d;
   max-width: 300px;
-  font-size: 20px;
-  padding: 20px;
-  color: rgb(116, 242, 116);
+  font-size: 26px;
+  font-weight: light;
+  padding: 15px;
+  color: rgb(50, 249, 50);
 }
-
-
 
 /*navigation*/
 .navigationbar {
@@ -98,6 +93,9 @@
   align-items: center;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+.blogs-card h2{
+  font-size: 25px;
 }
 .logo {
   color: #023c56;
@@ -160,8 +158,6 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-
 
 @media (max-width: 600px) {
   .hamburger {

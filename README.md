@@ -1,4 +1,4 @@
-"""
+æ"""
 
 ## Project Exam 1
 ### DEscription
@@ -15,12 +15,15 @@ You can list a the tech stack that you've used over here
 
 
 
-###Getting Started
-Clone the repo
-gh repo clone Noroff-FEU-Assignments/project-exam-1-fantadiallo
-Visit the website
-Contributing
-If you want to contribute, I would appreciate it if you open a pull request, so that the code can be reviewed.
+## Getting Started
+### Installation
+1. Clone the repository:
+
+    ```bash
+    gh repo clone Noroff-FEU-Assignments/project-exam-1-fantadiallo
+    ```
+
+
 
 ### Contact
 ## Goal

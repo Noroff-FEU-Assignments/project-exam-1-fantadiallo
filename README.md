@@ -15,8 +15,9 @@ You can list a the tech stack that you've used over here
 
 
 
-Getting Started
+###Getting Started
 Clone the repo
+gh repo clone Noroff-FEU-Assignments/project-exam-1-fantadiallo
 Visit the website
 Contributing
 If you want to contribute, I would appreciate it if you open a pull request, so that the code can be reviewed.

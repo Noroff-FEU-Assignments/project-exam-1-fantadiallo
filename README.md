@@ -1,5 +1,27 @@
-## Project Exam 1
+"""
 
+## Project Exam 1
+### DEscription
+For our first-year project exam at Noroff, the assignment was to create a blog with a theme of our choice. I opted for a knitting/cabin-life theme, aiming to evoke a warm and cozy atmosphere. The task involved utilizing the WP Rest API to set up and manage blog posts, fetching them for display on our newly developed blog. Additionally, we were required to incorporate a carousel feature, allowing users to scroll through featured posts, as well as a "read more" functionality to access additional posts. Lastly, a contact form with JavaScript validation was to be implemented to facilitate user interaction.
+
+### Buildt with
+You can list a the tech stack that you've used over here
+
+- Figma
+- HTML
+- CSS
+- JS
+- WP REST API
+
+
+
+Getting Started
+Clone the repo
+Visit the website
+Contributing
+If you want to contribute, I would appreciate it if you open a pull request, so that the code can be reviewed.
+
+### Contact
 ## Goal
 
 To put into practice the skills learned over your first year of studies.
